@@ -1,0 +1,70 @@
+ body 
+    {
+        background-color: white;
+    }
+
+/* css for the node containers*/
+    div[id*='div_node_']
+    {
+        float: left;
+        clear: both;
+        width: 90%;
+        margin-left: 7.5%;
+        margin-bottom: 5px;
+    }
+/*css for all children inside the nodes*/
+/*    div[id*='div_node_'] *
+    {
+        float:left;
+    }
+*/
+/* for the node order p-tag */
+    p[id*='p_node']
+    {
+    float:left;
+    font-size: 4em;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    margin-right: 3px;
+    }
+/*css for the actual text area*/
+    textarea[id*='textarea_node_']
+    {
+        width: 60%;
+        height: 48px;
+        float:right;
+    }
+
+/*    label[id*=tag_label_node_]
+,   label[id*=class_label_node_]
+,   label[id*=id_label_node_]
+{
+    clear: left;
+}*/
+
+    label[id*='href_label_node_']
+,   input[id*='href_input_node_']   
+,   button[id*='child_button_node_']
+    {
+         display: none;
+    }
+
+    label 
+    {
+        margin-left: 5px;
+    }
+
+    button[id*='clone_button_node_']
+    {
+        clear:left;
+        margin-left: 2em;
+    }
+
+    .node_0
+    {
+         display: none;
+    }
+    #clone_button_node_0, #div_node_0
+    {
+        display: inline-block;
+    }

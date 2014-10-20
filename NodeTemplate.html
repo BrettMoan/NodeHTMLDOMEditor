@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <script type="text/javascript" src="dynamicDropdowns.js"></script>
+    <link href="NodeTemplate.css" rel="stylesheet" type="text/css" />
+
+    <style>
+   
+    </style>
+    </head>
+    <body>
+    <form name="blog_post_form" method="post" onsubmit="return false;">
+    <input type="submit">
+
+    <!-- the current version of all the DOM requests are referensing div "content" as the 1st parent of the Nodes -->
+    <div id="content"> 
+        <div class="node_0" id="div_node_0" title="div_node_0" >
+            <p class="node_0" id="p_node_0"  title="p_node_0">0.</p>
+            
+            <textarea class="node_0" id="textarea_node_0"  title="textarea_node_0" name="textarea_node_0"><!-- text inside textarea --> </textarea>
+
+
+            <label  class="node_0" id="tag_label_node_0"  title="tag_label_node_0"  for="tag_select_node_0">TAG:</label>
+            <select class="node_0" id="tag_select_node_0" title="tag_select_node_0" name="tag_select_node_0"
+            onchange="setOptions(document.blog_post_form.tag_select_node_0.options[document.blog_post_form.tag_select_node_0.selectedIndex].value, document.blog_post_form.class_select_node_0, 0);">
+                <option value=" " selected="selected"> </option>
+                <option value="h1">Header 1</option>
+                <option value="h2">Header 2</option>
+                <option value="h3">Header 3</option>
+                <option value="h4">Header 4</option>
+                <option value="h5">Header 5</option>
+                <option value="a">Hyperlink</option>
+                <option value="p">Paragraph</option>
+                <option value="pre">Code</option>
+                <option value="ol">Ordered List</option>
+                <option value="ul">Unordered List</option>
+                <option value="li">List Item</option>
+            </select> <br />
+
+            <label  class="node_0" id="class_label_node_0"  title="class_label_node_0"  for="class_select_node_0">Class:</label>
+            <select class="node_0" id="class_select_node_0" title="class_select_node_0" name="class_select_node_0" size="1"   >
+               <option value=" " selected="selected">First Select Tag type</option>
+            </select> <br />
+
+            <label class="node_0" id="id_label_node_0"  title="id_label_node_0" for="id_input_node_0" >ID:</label>
+            <input class="node_0" id="id_input_node_0"  title="id_input_node_0" name="id_input_node_0" type="text" >
+            <br />
+            <label class="node_0" id="href_label_node_0"  title="href_label_node_0" for="href_input_node_0">HREF:</label>
+            <input class="node_0" id="href_input_node_0"  title="href_input_node_0" name="href_input_node_0" type="text" >   
+
+
+            <button class="node_0" onclick="foobar(0, false)"   id="clone_button_node_0"   title="clone_button_node_0" >+Below</button>
+            <button class="node_0" onclick="deleteMe(0)" id="delete_button_node_0"  title="delete_button_node_0">Delete</button>
+            <button class="node_0" onclick="foobar(0, true)"   id="child_button_node_0"   title="child_button_node_0" >+Child</button>
+
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript" src="NodeTemplate.js"></script>
+    </body>
+    </html>
