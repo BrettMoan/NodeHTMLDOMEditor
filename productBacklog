@@ -1,0 +1,46 @@
+Product Backlog
+
+decide on database (mysql or postgresSQL)
+decide on DB connectivity (nodeJS, PHP, Etc.)
+
+Design GUI for blog pages (Add/edit blog post, topic index, user comments, topic recommendation, user creation, etc )
+
+
+
+PL/SQL function for insert a blog post.
+PL/SQL function for display a blog post.
+
+create tables.
+create staging tables for post preview.
+create Inserts.
+add logic to get valeus from HTML DOM -> blog insert  nodes
+pages for handling user promotion demotion
+design tables / web GUI for user comments
+design submission of topic request
+create function for database connectivity
+
+Features (most their own page)
+Add/edit blog post
+, topic index 
+, user comments (page template as part of lots of pages!)
+, topic recommendation (user request for tutorial topic post.)
+, user creation (automated user creation)
+, reset password (automated)
+, modify user information (editable forms.)
+, Admin pages (dynamic based on User group level?)
+, Browse by category
+, Browse by author
+, Browse by post date
+, Search (simply leveraging Google's search "site:" feature) (part of the Site header)
+, 
+
+implement User Group Hierarchy (database tables, PLSQL scripts, and )
+    normal users that can comment on a blog-post (the comment requires approval of the blog post author)
+    blog authors who can make posts
+    blog admins who can: promote/demote blog users to blog authors /
+    blog devs
+        modify the website back-end (MySQL and PHP), 
+        modify the website front-end (HTML, JS, and CSS),
+    blog owners can 
+        Full control (all other groups)
+        promote/demote users to authors,admins, blog developers
