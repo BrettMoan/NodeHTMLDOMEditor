@@ -6,14 +6,15 @@ decide on DB connectivity (nodeJS, PHP, Etc.)
 Design GUI for blog pages (Add/edit blog post, topic index, user comments, topic recommendation, user creation, etc )
 
 
-
 PL/SQL function for insert a blog post.
 PL/SQL function for display a blog post.
 
-create tables.
+create tables. 
+  -- expand based on design
 create staging tables for post preview.
-create Inserts.
+  -- copies of all tables related to blog posts 
 add logic to get valeus from HTML DOM -> blog insert  nodes
+  -- 
 pages for handling user promotion demotion
 design tables / web GUI for user comments
 design submission of topic request
@@ -32,7 +33,6 @@ Add/edit blog post
 , Browse by author
 , Browse by post date
 , Search (simply leveraging Google's search "site:" feature) (part of the Site header)
-, 
 
 implement User Group Hierarchy (database tables, PLSQL scripts, and )
     normal users that can comment on a blog-post (the comment requires approval of the blog post author)
